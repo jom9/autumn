@@ -7,3 +7,4 @@ class Permanent(Card):
         self.tapped = True
     def untap(self):
         self.tapped = False
+    

@@ -29,7 +29,7 @@ class BoardState():
         self.opLands = []
         self.opCreatures = []
 
-
+        
     def setDecks(self,filename):
         self.playersDeck.getDeckList(filename)
         for i in range(defaultDeckSize):

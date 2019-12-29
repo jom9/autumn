@@ -5,3 +5,4 @@ class Creature(Permanent):
         self.toughness = tough
         self.power = power
         self.keywords =kywrds #list of abilities such as flying,vigilence etc
+    

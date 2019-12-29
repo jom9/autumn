@@ -1,5 +1,3 @@
 from Card import Card
-
-
-class Instant(Card):
+class Sorcery(Card):
     def __init__(self):
