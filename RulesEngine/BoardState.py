@@ -29,7 +29,7 @@ class BoardState():
         self.opLands = []
         self.opCreatures = []
 
-        
+
     def setDecks(self,filename):
         self.playersDeck.getDeckList(filename)
         for i in range(defaultDeckSize):
@@ -50,3 +50,8 @@ class BoardState():
         self.playersHand.showHand()
         print('OP Hand:')
         self.opponentsHand.showHand()
+    def showManaPool(self):
+        print("Mana Pool:",'w',self.manaPool[0],'u',self.manaPool[1],'b',self.manaPool[2],'r',self.manaPool[3],'g',self.manaPool[4],self.manaPool[5])
+    def showCreatures(self):
+        print('Your Creatues:')
+        for creature in self.players
