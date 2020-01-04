@@ -34,7 +34,9 @@ class Card():
         p = {'exact':name}
         r = requests.get(url=apiURL,params=p)
         data = r.json()
-        self.cardText = data['oracle_text']
+        self.cardText = data['oracle_text'].replace(':',' :')
+        self.cardText = self.cardText.replace('(','')
+        self.cardText = self.cardText.replace(')','')
         self.type= data['type_line']
         self.manaCost = data['mana_cost']
         self.colors = []

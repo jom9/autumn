@@ -1,0 +1,17 @@
+#Written by Jonathan Martinez
+
+
+This is the documentation for the language that the oracle text is written when passed through
+the lexical analyzer.
+
+Terminals: The characters are split into 3 groups, alphabeticals, operators, numerics
+
+
+
+Ex
+Underground Sea
+{T} : Add {U} or {B}.
+
+S
+(AA)
+CA
