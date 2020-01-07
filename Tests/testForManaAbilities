@@ -1,6 +1,23 @@
-({T}: Add {U}.)
-{T}: Add {U} for each artifact you control.
+{T} : Add {U}.
 
-{T}, Pay 1 life, Sacrifice Scalding Tarn: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle your library."
+{T} : Add {U} for each artifact you control.
 
-({T}: Add {U} or {B}.)
+{T}, Pay 1 life, Sacrifice Scalding Tarn : Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle your library."
+
+{T} : Add {U} or {B}.
+
+{T}: Add {C}.\n{T}, Sacrifice Wasteland: Destroy target nonbasic land.
+
+{T}, Pay 1 life, Sacrifice Polluted Delta: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle your library.
+
+{T}, Pay 1 life, Sacrifice Misty Rainforest: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle your library.
+
+{T}: Add {G} or {U}.
+
+{T}: Add {U} or {R}.
+
+{T}, Pay 1 life, Sacrifice Flooded Strand: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle your library.
+
+{T}: Draw two cards, then discard three cards.
+
+{T}: Add {C}.\n{T}, Sacrifice Strip Mine: Destroy target land.
