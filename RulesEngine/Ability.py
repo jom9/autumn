@@ -9,6 +9,14 @@ class Ability():
         pass
     def undo(self):
         pass
+    def isLegal(self):
+        return False
+class Cost(Ability):
+    def getTypes(self):
+        pass
+    def isPayable(self):
+        pass
+
 class ActivatedAbility(Ability):
     def __init__(self):
         self.costs = []
@@ -17,42 +25,32 @@ class ActivatedAbility(Ability):
         self.costs.append(cost)
     def addEffect(self,effect):
         self.effects.apppend(effect)
-    def resolve(self):
+    def getTypes(self):
+        types = []
         for cost in self.costs:
-            cost.resolve()
+            types+=[cost.getTypes()]
+        return types
+    def isLegal(self,inputs):
+        for cost,input in zip(self.costs,inputs):
+            if not cost.resolve(*input):
+                return False
+        return True
+    def resolve(self,inputs):
+        for cost,input in zip(self.costs,inputs):
+            cost.resolve(*input)
         for effect in self.effects:
-            effect.resolve
+            effect.resolve()
 
 class TriggerAbility(Ability):
     def __init__(self):
         self.conditions = []
         self.effects = []
-class Draw(Ability):
-    def __init__(self,brd,tgt):
-        super().__init__(self)
-        self.board = brd
-        self.target =tgt
-    def resolve():
-        if self.target=='player':
-            self.board.playersHand.addCard(self.playersDeck.draw())
-        elif target == 'op':
-            self.board.opponentsHand.addCard(self.opponentsDeck.draw())
-class addMana(Ability):
-    def __init__(self,brd,clr):
-        super().__init__(self)
-        self.board = brd
-        self.color =clr
-    def resolve():
-        manatypes = ['w','u','b','r','g','c']
-        i= 0
-        for manatype in manatypes:
-            if self.color== manatype:
-                self.board.manaPool[i]+=1
-            i+=1
-
-class tap(Ability):
-    def __init__(self,target)
-    def resolve(self,target):
-        target.tap()
-    def undo(self,target):
-        target.untap()
+class Tap(Cost):
+    def getTypes(self):
+        return [type( Permanent )]
+    def isPayable(self,P : Permanent):
+        if P.tapped == False:
+            return True
+        return False
+    def resolve(self,P : Permanent):
+        P.tap()

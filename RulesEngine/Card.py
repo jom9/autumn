@@ -16,6 +16,7 @@ class Card():
             clr = argv[3]
             ty = argv[4]
             self.setValues(cdname,cdtext,mncost,clr,ty)
+        self.abilities = []
 
     def setValues(self,cdname,cdtext,mncost,clr,ty):
         self.cardName = cdname
@@ -42,3 +43,5 @@ class Card():
         self.colors = []
         for color in data['colors']:
             self.colors+=[color]
+    def cast(self):
+        pass
