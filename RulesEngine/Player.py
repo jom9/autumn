@@ -10,3 +10,7 @@ class Player():
         self.graveyard = []
         self.exile = []
         self.permanents = []
+    def draw(self):
+        self.hand.addCard(self.deck.draw())
+    def showHand(self):
+        self.hand.showHand()

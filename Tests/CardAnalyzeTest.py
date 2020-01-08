@@ -2,22 +2,77 @@ import sys
 from os import path
 sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
 from RulesEngine.BoardState import BoardState
-def compareFiles(filename1,filename2):
-    file1 = open(filename1,'r')
-    file2 = open(filename2,'r')
-    if file1.read()== file2.read():
-        return True
-    else:
-        return False
-def IslandTest():
-        if compareFiles('CardAnalyzer\\GeneratedCards\\Island.py','Test\\ExampleGeneratedCards\\Island.py'):
-            return True
-        return False
-def Underground_Sea():
-    if compareFiles('CardAnalyzer\\GeneratedCards\\Underground_Sea.py','Test\\ExampleGeneratedCards\\Underground_Sea.py'):
-        return True
+from RulesEngine.Ability import *
+from RulesEngine.Permanent import Permanent
+from RulesEngine.Player import Player
+from RulesEngine.Land import Land
+from CardAnalyzer.CardAnalyzer
+
+
+def TestIsland(board):
+
     return False
+def TestUndergroundSea(board)):
+    return False
+def TestScaldingTarn(board)):
+    return False
+def TestWastland(board)):
+    return False
+def TestBazer(board)):
+    return False
+
 def main():
-    print('Island Test Failed:',IslandTest())
-    print('Underground Sea Faild',Underground_Sea())
-    
+    passed = True
+    B = BoardState()
+    B.setDecks('testList.txt')
+    B.startMatch()
+    try:
+        if TestIsland(B):
+            print("Passed Island Test")
+        else:
+            print("Failed Island Test")
+            passed = False
+    except:
+        print("Failed Island Test,crash")
+        passed = False
+    try:
+        if TestUndergroundSea(B):
+            print('Passed Underground Sea Test')
+        else:
+            print('Failed Underground Sea Test')
+            passed = False
+    except:
+        print('Failed Underground Sea Test,crash')
+        passed = False
+    try:
+        if TestScaldingTarn(B):
+            print('Passed Test Scalding Tarn Test')
+        else:
+            print('Failed Scalding Tarn Test')
+            passed = False
+    except:
+        print('Failed Scalding Tarn Test,crash')
+        passed = False
+    try:
+        if TestWastland(B):
+            print('Passed Wasteland Test')
+        else:
+            print('Failed Wasteland Test')
+            passed = False
+    except:
+        print('Failed Wasteland Test,crash')
+        passed = False
+    try:
+        if TestBazer(B):
+            print('Passed Bazer Test')
+        else:
+            print('Failed Bazer Test')
+            passed = False
+    except:
+        print('Failed Bazer Test,crash')
+        passed = False
+    if passed:
+        return "All tests are passed"
+    else:
+        return "Failed A Test"
+print(main())
