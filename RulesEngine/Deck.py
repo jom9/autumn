@@ -63,3 +63,4 @@ class Deck():
                 break
             i+=1
         self.shuffle()
+        return self.mainboard[i]

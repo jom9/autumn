@@ -10,7 +10,6 @@ from CardAnalyzer.CardAnalyzer
 
 
 def TestIsland(board):
-
     return False
 def TestUndergroundSea(board)):
     return False

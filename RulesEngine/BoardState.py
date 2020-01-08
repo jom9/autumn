@@ -19,7 +19,6 @@ class BoardState():
         self.stack= Stack()
         self.turnNum = 0
         self.startingManaPool = [0,0,0,0,0,0]
-
         self.turns = ['player','op']
         self.phases = [ 'Untap','Upkeep','Draw','PreMain','Begin Combat','Declare Attackers','Declare Blockers',
         'Combat Damage','End of Combat','Post Combat','End','Cleanup']

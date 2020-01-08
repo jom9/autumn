@@ -14,3 +14,5 @@ class Player():
         self.hand.addCard(self.deck.draw())
     def showHand(self):
         self.hand.showHand()
+    def tutor(self,name):
+        self.hand.addCard(self.deck.tutor(name))
