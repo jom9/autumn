@@ -1,0 +1,12 @@
+////
+$$$${T} : Add {U} or {B}.$$$$
+$$$$Land — Island Swamp$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$$Counter target spell unless its controller pays {3}.$$$$
+$$$$Instant$$$$
+$$$${1}{U}$$$$
+$$$$U$$$$
+////
