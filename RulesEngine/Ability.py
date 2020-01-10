@@ -2,7 +2,7 @@
 from BoardState import BoardState
 from Permanent import Permanent
 from Land import Land
-from Player import Player
+import re
 class Ability():
     def __init__(self):
         pass
@@ -36,11 +36,11 @@ class ActivatedAbility(Ability):
             if not cost.resolve(*input):
                 return False
         return True
-    def resolve(self,costInputs,effectInputs):
-        for cost,costInput in zip(self.costs,costInputs):
-            cost.resolve(*costInput)
-        for effect,effectInput in zip(self.effects,effectInputs):
-            effect.resolve(*effectInput)
+    def resolve(self,inputs):
+        for cost,input in zip(self.costs,inputs):
+            cost.resolve(*input)
+        for effect in self.effects:
+            effect.resolve()
 
 class TriggerAbility(Ability):
     def __init__(self):
@@ -58,11 +58,22 @@ class Tap(Cost):
 class AddMana(Ability):
     def getTypes(self):
         return [type(''),type(Player)]
-    def resolve(self,color,player):
-        colors = 'wubrgc'
+    def resolve(self,clr,plyr):
         i = 0
-        for i in range(len(colors)):
-            if color == colors[i]:
-                player.manaPool[i]+=1
+        for color in 'wubrgc':
+            if color == clr:
+                plyr.manaPool[i]+=1
                 break
             i+=1
+class Cast(ActivatedAbility):
+    def getTypes(self):
+        return [type(Card),type(Player)]
+    def isLegal(self,card: Card, plyr: Player):
+
+
+
+class Play(Ability):
+    def getTypes(self):
+        return [type(Land),type(Player)]
+    def resolve(self,land: Land, ply: Player):
+        player.permanents.append(land)

@@ -54,20 +54,30 @@ class Card():
             for color in data['colors']:
                 self.colors+=[color]
 
+
             cache.write('$$$$'+self.cardText+'$$$$\n')
             cache.write('$$$$'+self.type+'$$$$\n')
             cache.write('$$$$'+self.manaCost+'$$$$\n')
             cache.write('$$$$'+'-'.join(self.colors)+'$$$$\n')
 
             cache.write('////\n')
+
+            self.imageurl = data['image_uris']['small']
+            
+            r2 = requests.get(url=self.imageurl)
+            with open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/Card Images/'+name+'.jpg','wb+') as f:
+                f.write(r2.content)
+                f.close()
+
             cache.close()
     def isCached(self,name):
         i = 0
         for card in open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CachedCards.txt','r').readlines():
-            
+
             if name == card[:-1]:
                 cachedCard = open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CardInfo.txt','r').read().split('////\n')[i]
                 notskipped =0
+
                 for line in cachedCard.split('$$$$'):
                     if line.isspace():
                         if notskipped==0:
