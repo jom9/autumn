@@ -19,7 +19,9 @@ class Deck():
                 continue
             numOfCpys = line[0]
             name = line[2:]
-
+            c = Card()
+            c.getCard(name)
+            '''
             apiURL = 'https://api.scryfall.com/cards/named'
             p = {'exact':name}
             r = requests.get(url=apiURL,params=p)
@@ -30,10 +32,10 @@ class Deck():
             colors = []
             for color in data['colors']:
                 colors+=[color]
-
+            '''
 
             for i in range( int(numOfCpys) ):
-                card = (Card(name,text,manaCost,colors,type),i)
+                card = (c,i)
                 if mainBool:
                     self.mainboard.append(card)
                 else:

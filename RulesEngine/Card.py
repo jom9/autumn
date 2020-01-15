@@ -29,6 +29,7 @@ class Card():
         S = 'Card Name:'+self.cardName+',Card Text:'+self.cardText+',Mana Cost:'+self.manaCost
         return S
     def getCard(self,name):
+        print('Importing:'+name)
         if self.isCached(name):
             return True
         else:
@@ -63,7 +64,7 @@ class Card():
             cache.write('////\n')
 
             self.imageurl = data['image_uris']['small']
-            
+
             r2 = requests.get(url=self.imageurl)
             with open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/Card Images/'+name+'.jpg','wb+') as f:
                 f.write(r2.content)

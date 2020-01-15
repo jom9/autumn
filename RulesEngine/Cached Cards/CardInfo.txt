@@ -10,3 +10,327 @@ $$$$Instant$$$$
 $$$${1}{U}$$$$
 $$$$U$$$$
 ////
+////
+$$$$Target player draws three cards.$$$$
+$$$$Instant$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$${T}, Sacrifice Black Lotus : Add three mana of any one color.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$${T}, Pay 1 life, Sacrifice Bloodstained Mire : Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle your library.$$$$
+$$$$Land$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$$You may look at the top card of your library any time.
+You may play the top card of your library. If you cast a spell this way, pay life equal to its converted mana cost rather than pay its mana cost.
+{T}, Sacrifice ten nonland permanents : Each opponent loses 10 life.$$$$
+$$$$Legendary Artifact$$$$
+$$$${3}{B}{B}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Draw three cards, then put two cards from your hand on top of your library in any order.$$$$
+$$$$Instant$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Add {B}{B}{B}.
+Threshold — Add {B}{B}{B}{B}{B} instead if seven or more cards are in your graveyard.$$$$
+$$$$Instant$$$$
+$$$${1}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Return target nonland permanent to its owner's hand. Then that permanent's controller may sacrifice a land. If the player does, they may copy this spell and may choose a new target for that copy.$$$$
+$$$$Instant$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Escalate—Discard a card. Pay this cost for each mode chosen beyond the first.
+Choose one or more —
+• Target opponent reveals their hand. You choose an instant or sorcery card from it. That player discards that card.
+• Target creature gets -2/-2 until end of turn.
+• Target opponent loses 2 life and you gain 2 life.$$$$
+$$$$Sorcery$$$$
+$$$${1}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Search your library for a card and put that card into your hand. Then shuffle your library.
+Spell mastery — If there are two or more instant and/or sorcery cards in your graveyard, add {B}{B}{B}.$$$$
+$$$$Sorcery$$$$
+$$$${3}{B}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Add {B}{B}{B}.$$$$
+$$$$Instant$$$$
+$$$${B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Each spell costs {3} more to cast except during its controller's turn.$$$$
+$$$$Artifact$$$$
+$$$${2}$$$$
+$$$$$$$$
+////
+////
+$$$$Search your library for a card, put that card into your hand, then shuffle your library.$$$$
+$$$$Sorcery$$$$
+$$$${1}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Target opponent reveals their hand. You choose a noncreature, nonland card from it. That player discards that card.$$$$
+$$$$Sorcery$$$$
+$$$${B}$$$$
+$$$$B$$$$
+////
+////
+$$$${U/P} can be paid with either {U} or 2 life.
+Look at target player's hand.
+Draw a card.$$$$
+$$$$Sorcery$$$$
+$$$${U/P}$$$$
+$$$$U$$$$
+////
+////
+$$$$Return all artifacts target player owns to their hand.$$$$
+$$$$Instant$$$$
+$$$${1}{U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Discard your hand, Sacrifice Lion's Eye Diamond : Add three mana of any one color. Activate this ability only any time you could cast an instant.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$${T}, Sacrifice Lotus Petal : Add one mana of any color.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$$At the beginning of your upkeep, flip a coin. If you lose the flip, Mana Crypt deals 3 damage to you.
+{T} : Add {C}{C}.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$$Mana Vault doesn't untap during your untap step.
+At the beginning of your upkeep, you may pay {4}. If you do, untap Mana Vault.
+At the beginning of your draw step, if Mana Vault is tapped, it deals 1 damage to you.
+{T} : Add {C}{C}{C}.$$$$
+$$$$Artifact$$$$
+$$$${1}$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {G}.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {B}.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {W}.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {R}.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {U}.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
+////
+$$$$Search your library for an instant or sorcery card and reveal that card. Shuffle your library, then put the card on top of it.$$$$
+$$$$Instant$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Skip your draw step.
+Whenever you discard a card, exile that card from your graveyard.
+Pay 1 life : Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.$$$$
+$$$$Enchantment$$$$
+$$$${B}{B}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$${T}, Pay 1 life, Sacrifice Polluted Delta : Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle your library.$$$$
+$$$$Land$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$$Look at the top three cards of your library, then put them back in any order. You may shuffle your library.
+Draw a card.$$$$
+$$$$Sorcery$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Scry 2, then draw a card. To scry 2, look at the top two cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.$$$$
+$$$$Sorcery$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$${T}, Pay 1 life, Sacrifice Scalding Tarn : Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle your library.$$$$
+$$$$Land$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$${1} : Look at the top three cards of your library, then put them back in any order.
+{T} : Draw a card, then put Sensei's Divining Top on top of its owner's library.$$$$
+$$$$Artifact$$$$
+$$$${1}$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {U}.$$$$
+$$$$Basic Snow Land — Island$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {B}.$$$$
+$$$$Basic Snow Land — Swamp$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {C}{C}.$$$$
+$$$$Artifact$$$$
+$$$${1}$$$$
+$$$$$$$$
+////
+////
+$$$$Target player loses 2 life and you gain 2 life.
+Storm When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.$$$$
+$$$$Sorcery$$$$
+$$$${2}{B}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Take an extra turn after this one.$$$$
+$$$$Sorcery$$$$
+$$$${1}{U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Each player shuffles their hand and graveyard into their library, then draws seven cards. Then put Timetwister into its owner's graveyard.$$$$
+$$$$Sorcery$$$$
+$$$${2}{U}$$$$
+$$$$U$$$$
+////
+////
+$$$$As an additional cost to cast this spell, sacrifice an artifact.
+Search your library for an artifact card and put that card onto the battlefield. Then shuffle your library.$$$$
+$$$$Sorcery$$$$
+$$$${2}{U}$$$$
+$$$$U$$$$
+////
+////
+$$$${T} : Add {U} for each artifact you control.$$$$
+$$$$Legendary Land$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {U} or {B}.$$$$
+$$$$Land — Island Swamp$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$$Search your library for a card, then shuffle your library and put that card on top of it. You lose 2 life.$$$$
+$$$$Instant$$$$
+$$$${B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Until end of turn, you may play cards from your graveyard.
+If a card would be put into your graveyard from anywhere this turn, exile that card instead.$$$$
+$$$$Sorcery$$$$
+$$$${2}{B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Return target nonland permanent to its owner's hand. Then that permanent's controller may sacrifice a land. If the player does, they may copy this spell and may choose a new target for that copy.$$$$
+$$$$Instant$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Each spell costs {3} more to cast except during its controller's turn.$$$$
+$$$$Artifact$$$$
+$$$${2}$$$$
+$$$$$$$$
+////
+////
+$$$$Destroy target creature if it has converted mana cost 2 or less.
+Revolt — Destroy that creature if it has converted mana cost 4 or less instead if a permanent you controlled left the battlefield this turn.$$$$
+$$$$Instant$$$$
+$$$${B}$$$$
+$$$$B$$$$
+////
+////
+$$$$Counter target instant or sorcery spell unless its controller pays {1}.
+Storm When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.$$$$
+$$$$Instant$$$$
+$$$${U}$$$$
+$$$$U$$$$
+////
+////
+$$$$Return all artifacts target player owns to their hand.$$$$
+$$$$Instant$$$$
+$$$${1}{U}$$$$
+$$$$U$$$$
+////
+////
+$$$${T} : Add {W}.
+{T} : Return target legendary creature to its owner's hand.$$$$
+$$$$Legendary Land$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$${T} : Add {U}.$$$$
+$$$$Basic Snow Land — Island$$$$
+$$$$$$$$
+$$$$$$$$
+////
+////
+$$$${T}, Sacrifice Tormod's Crypt : Exile all cards from target player's graveyard.$$$$
+$$$$Artifact$$$$
+$$$${0}$$$$
+$$$$$$$$
+////
