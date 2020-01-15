@@ -1,102 +1,46 @@
-Underground Sea
-Mana Leak
 Ancestral Recall
-
 Black Lotus
-
 Bloodstained Mire
-
 Bolas's Citadel
-
 Brainstorm
-
 Cabal Ritual
-
 Chain of Vapor
-
 Collective Brutality
-
 Dark Petition
-
 Dark Ritual
-
 Defense Grid
-
 Demonic Tutor
-
 Duress
-
 Gitaxian Probe
-
 Hurkyl's Recall
-
 Lion's Eye Diamond
-
 Lotus Petal
-
 Mana Crypt
-
 Mana Vault
-
 Mox Emerald
-
 Mox Jet
-
 Mox Pearl
-
 Mox Ruby
-
 Mox Sapphire
-
 Mystical Tutor
-
 Necropotence
-
 Polluted Delta
-
 Ponder
-
 Preordain
-
 Scalding Tarn
-
 Sensei's Divining Top
-
 Snow-Covered Island
-
 Snow-Covered Swamp
-
 Sol Ring
-
 Tendrils of Agony
-
 Time Walk
-
 Timetwister
-
 Tinker
-
 Tolarian Academy
-
 Underground Sea
-
 Vampiric Tutor
-
 Yawgmoth's Will
-
-Chain of Vapor
-
-Defense Grid
-
 Fatal Push
-
 Flusterstorm
-
-Hurkyl's Recall
-
 Karakas
-
-Snow-Covered Island
-
 Tormod's Crypt
-

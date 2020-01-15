@@ -11,6 +11,7 @@ class Card():
             self.manaCost = 'unknown'
             self.colors = []
             self.type ='unknown'
+            self.imagepath = path.dirname (path.dirname( path.abspath(__file__) ) )+'/imgs/cardback.jpeg'
         else:
             cdname = argv[0]
             cdtext = argv[1]
@@ -30,15 +31,17 @@ class Card():
         S = 'Card Name:'+self.cardName+',Card Text:'+self.cardText+',Mana Cost:'+self.manaCost
         return S
     def getImage(self):
-        imagepath =  path.dirname( path.abspath(__file__) )
-        return imagepath+'/Cached Cards/Card Images/'+self.cardName+'.jpg'
+        if self.cardName != 'unknown':
+            p =  path.dirname( path.abspath(__file__) )
+            self.imagepath = p+'/Cached Cards/Card Images/'+self.cardName+'.jpg'
+        return self.imagepath
     def getCard(self,name):
-        print('Importing:'+name)
+        #print('Importing:'+name)
         if self.isCached(name):
-            print('Cached:',name)
+            #print('Cached:',name)
             return True
         else:
-            print('Caching:',name)
+            #print('Caching:',name)
             delay = .2
             time.sleep(delay)
             cachednamefile = open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CachedCards.txt','a'   )
@@ -51,7 +54,7 @@ class Card():
             p = {'exact':name}
             r = requests.get(url=apiURL,params=p)
             data = r.json()
-            self.name =name[:-1]
+            self.cardName =name[:-1]
             self.cardText = data['oracle_text'].replace(':',' :')
             self.cardText = self.cardText.replace('(','')
             self.cardText = self.cardText.replace(')','')
@@ -72,7 +75,7 @@ class Card():
             self.imageurl = data['image_uris']['small']
 
             r2 = requests.get(url=self.imageurl)
-            with open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/Card Images/'+name+'.jpg','wb+') as f:
+            with open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/Card Images/'+name[:-1]+'.jpg','wb+') as f:
                 f.write(r2.content)
                 f.close()
 

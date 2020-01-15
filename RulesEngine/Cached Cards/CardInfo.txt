@@ -1,16 +1,4 @@
 ////
-$$$${T} : Add {U} or {B}.$$$$
-$$$$Land — Island Swamp$$$$
-$$$$$$$$
-$$$$$$$$
-////
-////
-$$$$Counter target spell unless its controller pays {3}.$$$$
-$$$$Instant$$$$
-$$$${1}{U}$$$$
-$$$$U$$$$
-////
-////
 $$$$Target player draws three cards.$$$$
 $$$$Instant$$$$
 $$$${U}$$$$
@@ -284,18 +272,6 @@ $$$${2}{B}$$$$
 $$$$B$$$$
 ////
 ////
-$$$$Return target nonland permanent to its owner's hand. Then that permanent's controller may sacrifice a land. If the player does, they may copy this spell and may choose a new target for that copy.$$$$
-$$$$Instant$$$$
-$$$${U}$$$$
-$$$$U$$$$
-////
-////
-$$$$Each spell costs {3} more to cast except during its controller's turn.$$$$
-$$$$Artifact$$$$
-$$$${2}$$$$
-$$$$$$$$
-////
-////
 $$$$Destroy target creature if it has converted mana cost 2 or less.
 Revolt — Destroy that creature if it has converted mana cost 4 or less instead if a permanent you controlled left the battlefield this turn.$$$$
 $$$$Instant$$$$
@@ -310,21 +286,9 @@ $$$${U}$$$$
 $$$$U$$$$
 ////
 ////
-$$$$Return all artifacts target player owns to their hand.$$$$
-$$$$Instant$$$$
-$$$${1}{U}$$$$
-$$$$U$$$$
-////
-////
 $$$${T} : Add {W}.
 {T} : Return target legendary creature to its owner's hand.$$$$
 $$$$Legendary Land$$$$
-$$$$$$$$
-$$$$$$$$
-////
-////
-$$$${T} : Add {U}.$$$$
-$$$$Basic Snow Land — Island$$$$
 $$$$$$$$
 $$$$$$$$
 ////
