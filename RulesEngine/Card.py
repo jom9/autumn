@@ -2,6 +2,7 @@ import requests
 import time
 import sys
 from os import path
+sys.path.append( path.dirname (path.dirname( path.abspath(__file__) ) ) )
 class Card():
     def __init__(self,*argv):
         if len(argv)== 0:
@@ -28,15 +29,20 @@ class Card():
     def toString(self):
         S = 'Card Name:'+self.cardName+',Card Text:'+self.cardText+',Mana Cost:'+self.manaCost
         return S
+    def getImage(self):
+        imagepath =  path.dirname( path.abspath(__file__) )
+        return imagepath+'/Cached Cards/Card Images/'+self.cardName+'.jpg'
     def getCard(self,name):
         print('Importing:'+name)
         if self.isCached(name):
+            print('Cached:',name)
             return True
         else:
+            print('Caching:',name)
             delay = .2
             time.sleep(delay)
             cachednamefile = open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CachedCards.txt','a'   )
-            cachednamefile.write(name+'\n')
+            cachednamefile.write(name)
             cachednamefile.close()
             cache = open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CardInfo.txt','a')
             cache.write('////\n')
@@ -45,7 +51,7 @@ class Card():
             p = {'exact':name}
             r = requests.get(url=apiURL,params=p)
             data = r.json()
-
+            self.name =name[:-1]
             self.cardText = data['oracle_text'].replace(':',' :')
             self.cardText = self.cardText.replace('(','')
             self.cardText = self.cardText.replace(')','')
@@ -74,11 +80,11 @@ class Card():
     def isCached(self,name):
         i = 0
         for card in open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CachedCards.txt','r').readlines():
-
-            if name == card[:-1]:
+            #print(name[-1],card[:-1],name[:] == card[:-1])
+            if name[:-1] == card[:-1]:
                 cachedCard = open(path.dirname( path.abspath(__file__) ) +'/Cached Cards/CardInfo.txt','r').read().split('////\n')[i]
                 notskipped =0
-
+                self.cardName=name[:-1]
                 for line in cachedCard.split('$$$$'):
                     if line.isspace():
                         if notskipped==0:
